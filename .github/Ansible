@@ -1,0 +1,13 @@
+name: Ansible folder
+on:
+  push:
+    paths:
+      - 'ansible/**'
+      
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  handle-api:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "ansible folder changed!"
